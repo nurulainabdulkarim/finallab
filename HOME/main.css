@@ -1,0 +1,1135 @@
+/* =================================================================
+===============================FIRST PAGES======================
+================================================================= */
+
+
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    ;
+}
+
+.modal{
+    display:none;
+    position:fixed;
+    height: 100%;
+    width:100%;
+    overflow:auto;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+    position:absolute;
+    left:360px;
+    top:15%;
+}
+
+.modal_img img{
+    opacity:0.5;
+    
+}
+
+.register_text{
+    position: absolute;
+    left: 45px;
+    top: -6em;
+    width: 500px;
+}
+
+.box_img{
+    background-color: whitesmoke;
+    width:600px;
+    padding: 30px 30px;
+}
+
+.input_register{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.input_register > input{
+    padding: 10px 20px;
+}
+
+.info{
+    position: absolute;
+    top: 187px;
+    left: 57px;
+}
+
+.close:hover{
+    color:maroon;
+    cursor: pointer;
+}
+
+/* -------------------------HEADER----------------------- */
+
+.top_linebar {
+    background-color: rgb(243, 200, 207);
+    height: 50px;
+}
+
+.flex {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10em;
+}
+
+.navbar {
+    padding-top: 18px;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 13px;
+    color: rgb(141, 41, 41);
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.fas {
+    padding-left: 2px;
+}
+
+.top_linebar_mobile {
+    display: none;
+}
+
+.test a:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.rewardbutton {
+    background-color: rgb(237, 168, 179);
+    color: black;
+    border-radius: 75px;
+    width: 92px;
+    padding: 1px 10px;
+    position: fixed;
+    right: 60px;
+    top: 501px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .top_linebar {
+        background-color: rgb(243, 200, 207);
+        height: 50px;
+    }
+    
+    .flex {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 1em;
+    }
+    
+    .navbar {
+        padding-top: 18px;
+    
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        padding: 13px;
+        color: rgb(141, 41, 41);
+        font-weight: bold;
+    }
+    
+    .navbar a:hover {
+        color: aliceblue;
+        cursor: pointer;
+    }
+    
+    .fas {
+        padding-left: 2px;
+    }
+    
+    .top_linebar_mobile {
+        display: none;
+    }
+    
+    .test a:hover{
+        color: aliceblue;
+        cursor: pointer;
+    }
+    
+    .rewardbutton {
+        background-color: rgb(237, 168, 179);
+        color: black;
+        border-radius: 75px;
+        width: 92px;
+        padding: 1px 10px;
+        position: fixed;
+        right: 60px;
+        top: 120px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:425px) {
+    body {
+        margin: 0;
+    }
+
+    .top_linebar {
+        background-color: rgb(243, 200, 207);
+        height: 50px;
+        display: none;
+    }
+
+    .top_linebar_mobile {
+        display: block;
+        /* display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,1fr); */
+        background-color: rgb(243, 200, 207);
+        height: 100%;
+        width: 100%;
+
+    }
+
+    .line{ 
+        background-color: rgb(243, 200, 207);
+        height: 50px;
+    }
+
+    .navactive{
+        display: none;
+    }
+
+    .positionbar{ 
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+
+    .positionbar a{
+        text-decoration: none;
+        color: rgb(141, 41, 41);
+        font-weight: bold;
+    }
+
+
+    .navbar {
+        width: 167px;
+        height: 61%;
+        background-color: rgb(237, 168, 179);
+        position: absolute;
+        left: 259px;
+        top: 50px;
+        display: inline-grid;
+        z-index: 1;
+        border-radius: 2px;
+        overflow: hidden;
+
+    }
+
+    .navbar a {
+        text-decoration: none;
+        padding: 5px;
+        color: rgb(141, 41, 41);
+        font-weight: bold;
+        text-align:center;
+        
+    }
+
+    .navbar a:hover {
+        color: aliceblue;
+        border: 1px solid transparent;
+
+    }
+
+    .fas {
+        padding-left: 2px;
+    }
+
+    .rewardbutton {
+        background-color: rgb(237, 168, 179);
+        color: black;
+        border-radius: 75px;
+        width: 93px;
+        padding: 0px 10px;
+        position: fixed;
+        left: 290px;
+        top: 132px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+}
+
+
+
+/* ==========================MAIN CONTENT (1)====================== */
+
+
+/* ----------------------------INPUT BUTTON----------------------- */
+.input_container {
+    padding-top: 15px;
+
+}
+
+.input {
+    position: absolute;
+    right: 15em;
+    padding: 10px 20px;
+}
+
+#search {
+    position: absolute;
+    right: 26em;
+    top: 75px;
+}
+
+@media (max-width:768px) {
+    .input {
+        position: absolute;
+        right: 3em;
+        padding: 10px 20px;
+    }
+    
+    #search {
+        position: absolute;
+        right: 17em;
+        top: 75px;
+    }
+}
+
+@media (max-width:425px) {
+    .input_container {
+        padding-top: 15px;
+
+    }
+
+    .input {
+        position: absolute;
+        right: 12px;
+        top: 65px;
+        padding: 7px 15px;
+    }
+
+    #search {
+        position: absolute;
+        right: 14em;
+        top: 74px;
+    }
+}
+
+
+
+/* ----------------------------LOGO----------------------- */
+
+.logo {
+    position: absolute;
+    left: 29em;
+    top: -37px;
+}
+
+@media (max-width:768px) {
+    .logo {
+        position: absolute;
+        left: 1em;
+        top: -74px;
+    }
+    .logo img {
+        width:200px;
+    }
+}
+
+
+@media (max-width:425px) {
+    .logo {
+        position: absolute;
+        left: 6em;
+        top: -73px;
+    }
+
+    .logo img {
+        width: 200px;
+
+    }
+}
+
+/* @media (max-width:768px){
+    .logo {
+        position: absolute;
+        left: 1em;
+        top: -73px;
+    }
+
+    .logo img {
+        width: 200px;
+
+    }
+} */
+
+/* ---------------------------CART TEXT-------------------------- */
+
+.cart_text {
+    position: absolute;
+    right: 216px;
+    top: 15em;
+}
+
+@media (max-width:425px) {
+    .cart_text {
+        position: absolute;
+        right: 13px;
+        top: 8em;
+        font-size: 12px;
+    }
+}
+
+
+
+/* ==========================MAIN CONTENT (2)====================== */
+
+
+/* <!---------------------------- PRODUCT MENU --------------------------->   */
+
+.productmenu {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 23em;
+    padding-top: 16em;
+}
+
+
+.product a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 20px;
+    color: rgb(141, 41, 41);
+}
+
+.product a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .productmenu {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 5em;
+        padding-top: 16em;
+    }
+}
+
+@media (max-width:425px) {
+    .productmenu {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 26px;
+        padding-top: 8em;
+    }
+
+
+    .product a {
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 13px;
+        padding: 0 5px;
+        color: rgb(141, 41, 41);
+    }
+
+    .product a:hover {
+        color: black;
+        cursor: pointer;
+    }
+}
+
+
+
+
+/* <!---------------------------- COVER ---------------------------------->   */
+.position_button1 {
+    position: absolute;
+    right: 171px;
+    top: 31em;
+}
+
+.button1 {
+    padding: 15px 80px;
+    background-color: rgb(68, 15, 15);
+    color: pink;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.button1:hover,
+.button1:focus {
+    cursor: pointer;
+    background-color: maroon;
+    color: rgb(120, 87, 165);
+    transition: 0.3s;
+
+}
+
+.cover {
+    position: absolute;
+    top: 23em;
+    padding-bottom: 40px;
+}
+
+.cover img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .position_button1 {
+        position: absolute;
+        right: 43px;
+        top: 18em;
+    }
+}
+
+@media (max-width:425px) {
+    .position_button1 {
+        position: absolute;
+        right: 30px;
+        top: 154px;
+    }
+
+    .button1 {
+        padding: 10px 10px;
+        background-color: rgb(68, 15, 15);
+        color: pink;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    .cover {
+        position: absolute;
+        top: 14em;
+        padding-bottom: 40px;
+    }
+
+    .cover img {
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+
+/* <!-- ==========================MAIN CONTENT (3)====================== -->  */
+
+.title1 {
+    position: absolute;
+    top: 66em;
+    left: 17em;
+}
+
+
+.jewellery_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    gap: 20px;
+    left: 156px;
+    top: 73em;
+    width: 250px;
+}
+
+.bracelets {
+    padding-left: 30px;
+}
+
+.earrings {
+    margin-left: 115px;
+}
+
+.textB {
+    position: absolute;
+    left: 103px;
+    top: 13em;
+    font-weight: bold;
+}
+
+.textB:hover {
+    color: maroon;
+    cursor: pointer;
+}
+
+.textE {
+    position: absolute;
+    left: 512px;
+    top: 3em;
+    font-weight: bold;
+}
+
+.textE:hover {
+    color: maroon;
+    cursor: pointer;
+}
+
+.textN {
+    position: absolute;
+    left: 853px;
+    top: 18em;
+    font-weight: bold;
+}
+
+.textN:hover {
+    color: maroon;
+    cursor: pointer;
+
+}
+
+.textR {
+    position: absolute;
+    left: 513px;
+    top: 34em;
+    font-weight: bold;
+}
+
+.textR:hover {
+    color: maroon;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .title1 {
+        position: absolute;
+        top: 47em;
+        left: 2em;
+    }
+
+    .title1 h1 {
+        font-size: 26px;
+    }
+    
+    .jewellery_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: absolute;
+        gap: 20px;
+        left: 21px;
+        top: 55em;
+        width: 250px;
+    }
+    
+    .bracelets {
+        padding-left: 30px;
+    }
+    .earrings {
+        margin-left: 70px;
+    }
+
+    .bracelets img {
+        width:150px;
+    }
+    .earrings img {
+        width:150px;
+    }
+    .necklace img{
+        width:150px;
+    }
+    .ring img{
+        width:300px;
+    }
+
+    
+    .textB {
+        position: absolute;
+        left: 66px;
+        top: 8em;
+        font-weight: bold;
+    }
+    
+    .textB:hover {
+        color: maroon;
+        cursor: pointer;
+    }
+    
+    .textE {
+        position: absolute;
+        left: 316px;
+        top: 0em;
+        font-weight: bold;
+    }
+    
+    .textE:hover {
+        color: maroon;
+        cursor: pointer;
+    }
+    
+    .textN {
+        position: absolute;
+        left: 556px;
+        top: 10em;
+        font-weight: bold;
+    }
+    
+    .textN:hover {
+        color: maroon;
+        cursor: pointer;
+    
+    }
+    
+    .textR {
+        position: absolute;
+        left: 332px;
+        top: 22em;
+        font-weight: bold;
+    }
+    
+    .textR:hover {
+        color: maroon;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:425px) {
+    .title1 {
+        position: absolute;
+        top: 62em;
+        left: 17px;
+        font-size: 7px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .title1 h1 {
+        font-size: 17px;
+    }
+
+    .jewellery_grid {
+        position: absolute;
+        gap: 20px;
+        left: 3px;
+        top: 36em;
+    }
+
+    .bracelets img {
+        padding-left: 30px;
+        width: 200px;
+        position: absolute;
+        top: -5em;
+        left: -13px;
+    }
+
+    .earrings img {
+        padding-left: 30px;
+        width: 200px;
+        position: absolute;
+        top: -10em;
+        left: 189px;
+    }
+
+    .necklace img {
+        padding-left: 30px;
+        width: 200px;
+        position: absolute;
+        top: 12em;
+        left: 177px;
+    }
+
+    .ring img {
+        padding-left: 30px;
+        width: 350px;
+        position: absolute;
+        top: 13em;
+        left: -95px;
+    }
+
+    .textB {
+        position: absolute;
+        left: 296px;
+        top: 7em;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .textB:hover {
+        color: maroon;
+        cursor: pointer;
+    }
+
+    .textE {
+        position: absolute;
+        left: 83px;
+        top: 7em;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .textE:hover {
+        color: maroon;
+        cursor: pointer;
+    }
+
+    .textN {
+        position: absolute;
+        left: 262px;
+        top: 30em;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .textN:hover {
+        color: maroon;
+        cursor: pointer;
+
+    }
+
+    .textR {
+        position: absolute;
+        left: 91px;
+        top: 30em;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .textR:hover {
+        color: maroon;
+        cursor: pointer;
+    }
+}
+
+
+/* <!-- ==========================BOTTOM CONTENT====================== -->  */
+
+.box {
+    background-color: rgb(243, 200, 207);
+    width: 830px;
+    display: grid;
+    height: 106px;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    top: 114em;
+    left: 273px;
+}
+
+.boxtext {
+    width: 420px;
+    padding-left: 19px;
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.address {
+    width: 383px;
+    padding-top: 35px;
+    padding-left: 2px;
+}
+
+.input_text {
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.button2 {
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+.outbox{
+    padding-bottom:30px;
+}
+.boxcontainer{
+    display: flex;
+    padding-bottom: 55px;
+}
+@media (max-width:768px) {
+    .box {
+        background-color: rgb(243, 200, 207);
+        width: 669px;
+        display: grid;
+        height: 106px;
+        grid-template-columns: repeat(2, 1fr);
+        position: absolute;
+        top: 84em;
+        left: 52px;
+    }
+
+    .boxtext {
+        width: 362px;
+        padding-left: 19px;
+        padding-top: 14px;
+        font-size: 20px;
+    }
+
+    .input_text {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+    
+    .button2 {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+    .address {
+        width: 256px;
+        padding-top: 35px;
+        padding-left: 2px;
+    }
+    
+}
+
+@media (max-width:425px) {
+    .box {
+        background-color: rgb(243, 200, 207);
+        display: grid;
+        height: 66px;
+        grid-template-columns: repeat(2, 1fr);
+        position: absolute;
+        top: 68em;
+        left: 24px;
+        width: 377px;
+    }
+
+    .boxtext {
+        width: 148px;
+        padding-left: 6px;
+        /* padding-right: 21px; */
+        padding-top: 0px;
+        font-size: 14px;
+    }
+
+    .address {
+        width: 221px;
+        padding-top: 0px;
+        padding-left: 0px;
+        position: absolute;
+        left: 158px;
+        bottom: 20px;
+    }
+
+    .input_text {
+        padding: 4px 6px;
+        font-size: 11px;
+    }
+
+    .button2 {
+        padding: 4px 6px;
+        font-size: 11px;
+    }    
+
+    .boxcontainer{
+        display: flex;
+        padding-bottom: 32px;
+    }
+
+}
+
+
+
+/* -------------------INFORMATION BOTTOM-------------------- */
+
+.one{
+    display: flex;
+    padding: 0px 30px;
+    gap: 333px;
+    position: absolute;
+    top: 99em;
+    left: 8em;
+    font-weight: bold;
+    font-size: 20px;
+    color: maroon;
+}
+
+.one-one{
+    position: absolute;
+    left: 130px;
+    top: 128em;
+    text-align: center;
+}
+
+.one-one a:hover{
+    color:maroon;
+}
+
+.one-one a{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+
+.two-two{
+    position: absolute;
+    left: 623px;
+    top: 128em;
+    text-align: center;
+}
+
+.two-two a:hover{
+    color:maroon;
+}
+
+.two-two a{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+
+.about{
+    padding: 8px 0;
+}
+
+.positioning{
+    position: absolute;
+    right: 148px;
+    top: 129em;
+}
+
+.fab{
+    font-size: 30px;
+}
+
+.far{
+    font-size: 30px;
+}
+
+@media (max-width:768px) {
+    .one {
+        display: flex;
+        padding: 0px 30px;
+        gap: 161px;
+        position: absolute;
+        top: 75em;
+        left: 1em;
+        font-weight: bold;
+        font-size: 20px;
+        color: maroon;
+    }
+    .one-one{
+        position: absolute;
+        left: -4px;
+        top: 98em;
+        text-align: center;
+    }
+    .two-two{
+        position: absolute;
+        left: 317px;
+        top: 98em;
+        text-align: center;
+    }
+    .positioning{
+        position: absolute;
+        right: 54px;
+        top: 98em;
+    }
+}
+
+@media (max-width:425px) {
+    .one{
+        display: flex;
+        padding: 0px 35px;
+        gap: 28px;
+        position: absolute;
+        top: 66em;
+        left: -1em;
+        font-weight: bold;
+        font-size: 18px;
+        color: maroon;
+    }
+    
+    .one-one{
+        position: absolute;
+        left: 12px;
+        top: 77em;
+        text-align: center;
+    }
+    
+    .one-one a:hover{
+        color:maroon;
+    }
+    
+    .one-one a{
+        text-decoration: none;
+        font-weight: bold;
+        color:black;
+    }
+    
+    .two-two{
+        position: absolute;
+        left: 155px;
+        top: 77em;
+        text-align: center;
+    }
+    
+    .two-two a:hover{
+        color:maroon;
+    }
+    
+    .two-two a{
+        text-decoration: none;
+        font-weight: bold;
+        color:black;
+    }
+    
+    .about{
+        padding: 8px 0;
+        font-size: 11px;
+    }
+    
+    .positioning{
+        position: absolute;
+        right: 41px;
+        top: 78em;
+    }
+    
+    .fab{
+        font-size: 30px;
+    }
+    
+    .far{
+        font-size: 30px;
+    }
+    .stripes img{
+        width: 100px;
+    }
+}
+
+
+
+/* <!-- ==========================FOOTER===================== -->  */
+
+.footer{
+    height: 74px;
+    background-color: rgb(243, 200, 207);
+    color:rgb(141, 41, 41);
+    /* position: absolute; */
+    margin-top: 127em;
+    text-align: center;
+    padding-top:10px;
+}
+@media (max-width:768px) {
+    .footer{
+        height: 74px;
+        background-color: rgb(243, 200, 207);
+        color:rgb(141, 41, 41);
+        /* position: absolute; */
+        margin-top: 98em;
+        text-align: center;
+        padding-top:10px;
+    }
+}
+
+@media (max-width:425px) {
+    .footer{
+        height: 74px;
+        background-color: rgb(243, 200, 207);
+        color: rgb(141, 41, 41);
+        /* position: absolute; */
+        margin-top: 78em;
+        text-align: center;
+        padding-top: 10px;
+    }
+}

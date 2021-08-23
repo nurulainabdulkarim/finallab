@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3a6a3afe4.js" crossorigin="anonymous"></script>
+    <title>Gracey Jewellery</title>
+</head>
+<body>
+    
+    <header>
+        <div class="modal">
+            <div class="modal-content">
+                <div class="closeModal">
+                    <span class="close"style="float:right;padding-right:10px; font-size:30px;">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+                <div class="box_img">
+                    <div class="modal_img"><img src="../first pages/img/woman.jpeg" width="600px"/></div>
+                </div>
+                <div class="info">
+                    <div class="register_text"><h1>REGISTER AS A MEMBER TODAY</h1></div>
+                    <div class="input_register">
+                        <p>Email*<input/></p>
+                        <p>Password*<input/></p>
+                        <p>Firstname*<input/></p>
+                        <p>Lastname*<input/></p>
+                        <p>Country*<input/></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="top_linebar">
+            <!----NAVBAR WEB VIEW--->
+            <div class="flex">
+                <nav class="navbar">
+                    <a href="../LOG IN/second.html">Log In</a>
+                    <a href="#">Sign Up</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Cart</a>
+                    <!-- <a href="#">MYR <i class="fas fa-sort-down"></i></a> -->
+                    <select class="currency">
+                        <option>MYR</option>
+                        <option>USD</option>
+                        <option>SGD</option>
+                        <option>EUR</option>
+                        <option>AUD</option>
+                    </select>
+                </nav>
+            </div>
+        </div>
+        <div class="top_linebar_mobile">
+            <!----NAVBAR MOBILE VIEW--->
+            <div class="navactive">
+                <nav class="navbar">
+                    <a href="../LOG IN/second.html">Log In</a>
+                    <a href="#">Sign Up</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Cart</a>
+                </nav>
+            </div>
+            <div class="line"></div>
+            <div class="positionbar">
+                <a href="#">MYR <i class="fas fa-sort-down"></i></a>
+                <a><i onclick="barnav()"id ="bars" style ="font-size: 25px;"class="fas fa-bars"></i></a>
+            </div>
+        </div>
+
+        <div onclick="reward();"class="rewardbutton">
+            <p>Rewards <i class="fas fa-gift"></i></p>
+        </div>
+    </header>
+
+
+    <!--  ==========================MAIN CONTENT (1)======================   -->
+
+    <!----------------------- INPUT BUTTON ------------------------------>
+    <main>
+        <div class="input_container">
+            <i id="search" class="fas fa-search"></i><input class="input" type="text" placeholder="SEARCH.."></input>
+        </div>
+        <!---------------------------- LOGO ---------------------------------->
+        <div class="logo">
+            <img src="img/logo.png" alt="logo" width="350px" />
+        </div>
+
+        <div class="cart_text">
+            <p><b>Free expedited shipping on orders $80 & above. </b><i class="fas fa-shopping-cart"></i> </p>
+        </div>
+    </main>
+
+
+    <!-- ==========================MAIN CONTENT (2)====================== -->
+
+    <!---------------------------- PRODUCT MENU ------------------------------>
+
+    <main>
+        <div class="productmenu">
+            <div class="product">
+                <a href="../HOME/index.html">HOME</a>
+                <a href="../RING/third.html">RING</a>
+                <a href="../NECKLACE/forth.html">NECKLACE</a>
+                <a href="../BRACELETS/bracelet.html">BRACELETS</a>
+                <a href="#">EARRINGS</a>
+                <a href="#">SET</a>
+            </div>
+        </div>
+
+        <!---------------------------- COVER ---------------------------------->
+        <div class="cover">
+            <div class="position_button1">
+                <button class="button1">View Collections</button>
+            </div>
+            <img onclick="change();" class="img_cover" src="img/covergracey.png" alt="cover"/>
+        </div>
+    </main>
+
+    <main>
+        <!-- ==========================MAIN CONTENT (3)====================== -->
+
+        <div>
+            <div class="title1">
+                <h1>
+                    MADE WITH PREMIUM GRADE CRYSTALS FROM MALAYSIA
+                </h1>
+            </div>
+        </div>
+
+        <div>
+            <div class="grid">
+                <div class="jewellery_grid">
+                    <div class="bracelets">
+                        <img src="img/product/barcelets.png" alt="bracelets" width="250px" />
+                        <div class="textB">
+                            <h3>Bracelets</h3>
+                        </div>
+                    </div>
+                    <div class="earrings">
+                        <div class="textE">
+                            <h3>Earrings</h3>
+                        </div>
+                        <img src="img/product/earring.png" alt="earrings" width="250px" />
+                    </div>
+                    <div class="necklace">
+                        <img src="img/product/necklace.png" alt="necklace" width="250px" />
+                        <div class="textN">
+                            <h3>Necklace</h3>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="ring">
+                        <img src="img/product/ring.png" alt="ring" width="450px" />
+                        <div class="textR">
+                            <h3>Ring</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <bottom>
+        <div>
+            <div class="outbox">
+                <div class="box">
+                    <div class="boxcontainer">
+                        <div class="boxtext">
+                            <h5>Subscribe to our newsletter and stay up to date</h5>
+                        </div>
+                        <div class="address">
+                            <input type="text" class="input_text" placeholder="Your email address "><button class="button2">Submit</button></input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- --------------------------------INFORMATION BOTTOM--------------------------------- -->
+        <div>
+            <div class="one">
+                <div><p>Information</p></div>
+                <div><p>My Account</p></div>
+                <div><p>Connect with Us</p></div>
+            </div>
+            <div class="one-one">
+                <div class="about"><a href="#">About</a></div>
+                <div class="about"><a href="#">Shipping & Returns</a></div>
+                <div class="about"><a href="#">Privacy Policy</a></div>
+                <div class="about"><a href="#">Terms & Conditions</a></div>
+                <div class="about"><a href="#">Ring Size Reference</a></div>
+                <div class="about"><a href="#">Jewellery Care</a></div>
+                <div class="stripes">
+                    <img src="img/images.png" width="200px"/>
+                </div>
+            </div>
+
+            <div class="two-two">
+                <div class="about"><a href="#">My Account</a></div>
+                <div class="about"><a href="#">Order History</a></div>
+                <div class="about"><a href="#">Wishlist</a></div>
+            </div>
+
+            <div class="positioning">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="far fa-envelope"></i>
+            </div>
+        </div>
+    </bottom>
+    <footer class="footer">
+
+        <h4>© 2021 Gracey Jewellery All Rights Reserved</h4>
+
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
