@@ -1,30 +1,30 @@
 // /////////////////////////////DO A MODAl/////////////////////////
 
-// //GET A MODAL
-// let modal = document.querySelector(".modal");
+//GET A MODAL
+let modal = document.querySelector(".modal");
 
 
-// //TRIGGERED MODAL
-// let openModal = document.querySelector(".button1");
+//TRIGGERED MODAL
+let openModal = document.querySelector(".button1");
 
-// //Listen for open click
-// document.querySelector(".button1").addEventListener('click', open);
+//Listen for open click
+document.querySelector(".button1").addEventListener('click', open);
 
-// //Function for open click
-// function open() {
-//     modal.style.display = "block"
-// }
+//Function for open click
+function open() {
+    modal.style.display = "block"
+}
 
-// //Close A modal
-// let closeModal = document.querySelector (".closeModal");
+//Close A modal
+let closeModal = document.querySelector (".closeModal");
 
-// //Listen to click -- close
-// document.querySelector(".closeModal").addEventListener('click', close);
+//Listen to click -- close
+document.querySelector(".closeModal").addEventListener('click', close);
 
-// //Function for close -- click
-// function close(){
-//     modal.style.display ="none"
-// }
+//Function for close -- click
+function close(){
+    modal.style.display ="none"
+}
 
 ///////////CHANGE THE HEADER COVER WITH ANOTHER IMAGES BY CLICK ON THAT IMAGES//////////
 
